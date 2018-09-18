@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.images-container,.slider-container{
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+}
+.slider-container{
+    background: linear-gradient(to right, #12de99, #5a32fa);
+    display: none;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 199;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.images-container{
+    background: linear-gradient(to right, #12de99, #5a32fa);
+}
+
+.images-gallery{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 7px;
+
+}
+.img-bg{
+    padding: 5px;
+    margin: 3px;
+    background: #fff;
+    border: 1px solid #fff;
+}
+.images-gallery img{
+    width: 250px;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    cursor: pointer;
+}
+
+.img-bg:hover{
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    background: linear-gradient(to right, #486eee, #c932fa);
+}
+
+.images-selected {
+    width: 90%;
+    position: relative;
+    padding: 15px 0;
+    margin: auto;
+    background: linear-gradient(to right, #cf23ee, #9538fa);
+}
+
+.images-selected >img{
+    max-width: 750px;
+    width: 90%;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    display: block;
+    margin: auto;
+    border: 2px solid #fff;
+}
+
+
+
+.images-slider {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+    background: #0029ff;
+}
+
+.active img{
+    width: 250px;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    cursor: pointer;
+}
+
+.slider-item{
+    display: none;
+}
+
+.active{
+    margin: auto;
+    padding: 7px;
+    display: block;
+}
+
+#close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#close-btn img,#arrow-left img,#arrow_right img,#next-btn img,#previous-btn img{
+   width: 50px;
+   cursor: pointer;
+}
+
+#arrow-left{
+    position: absolute;
+    top: 45%;
+    left: 5px;
+
+}
+
+#arrow_right{
+    position: absolute;
+    top: 45%;
+    right: 5px;
+}
+
+#next-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #0029ff;
+    border: 1px solid #23175ac2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid ;
+}
+
+#previous-btn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0029ff;
+    border: 1px solid #23175ac2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #000;
+}
